@@ -1,7 +1,7 @@
 const Telegraf = require('telegraf');
 const excel = require("./excelBotPro");
 const db = require('./db/db');
-const ConsecutivoTurnoCierre = require('/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/modulos/ConsecutivoTurnoCierreBOT');
+const ConsecutivoTurnoCierre = require('/home/pi/TicketSoftConsoleGpio/botticketsoft/modulos/ConsecutivoTurnoCierreBOT');
 const format = require('date-format');
 
 
@@ -111,7 +111,7 @@ module.exports = class TelegrafON {
           console.log('COMO0OO'+turno.turno)
           setTimeout(() => {
             ctx.replyWithDocument({
-              source: "/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/archivos/pdfs/CIERRE_DISPENSADOR_" + dispensador + "_TURNO_" + turno + ".pdf",
+              source: "/home/pi/TicketSoftConsoleGpio/botticketsoft/archivos/pdfs/CIERRE_DISPENSADOR_" + dispensador + "_TURNO_" + turno + ".pdf",
             });
           }, 5000);
         } else {
@@ -182,7 +182,7 @@ module.exports = class TelegrafON {
     
           
     
-            ctx.replyWithDocument({source:`/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/archivos/excel/${response}`});
+            ctx.replyWithDocument({source:`/home/pi/TicketSoftConsoleGpio/botticketsoft/archivos/excel/${response}`});
     
             //ctx.replyWithDocument({ source: "/home/pi/Music/botticketsoft/documentos/"+response})
     
