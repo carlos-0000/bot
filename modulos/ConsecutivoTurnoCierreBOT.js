@@ -732,10 +732,10 @@ module.exports = class ConsecutivoTurnoCierre {
     armarMensaje() {
         console.log('\tConsecutivo Cierre armando mensaje');
         
-        let f = format.asString('yyyy/MM/dd hh:mm', this.data.turnoCorte[0].fecha_cierre);
+        let f = this.data.turnoCorte[0].fecha_cierre ;
         let fSplit = f.split(" ");
         
-        let fa = format.asString('yyyy/MM/dd hh:mm', this.data.turnoCorte[0].fecha_apertura);
+        let fa = this.data.turnoCorte[0].fecha_apertura;
         let faSplit = fa.split(" ");
         console.log('asdfasdfdsf'+ this.data.tipo_impresora);
 
