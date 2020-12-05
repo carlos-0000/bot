@@ -377,7 +377,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventacredito = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -417,7 +419,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventacontrol = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -458,7 +462,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                   this.data.ventaprepago = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -496,7 +502,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventadatafono = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        ////let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -533,7 +541,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventacalibracion = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -572,7 +582,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventasinformapago = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
@@ -609,7 +621,9 @@ module.exports = class ConsecutivoTurnoCierre {
                 if (row) {
 
                     this.data.ventacalibracion = row.map(c => {
-                        let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        //let f = format.asString('yyyy/MM/dd hh:mm', c.fecha_ventas);
+                        console.log(c.fecha_ventas);
+                        let f =  c.fecha_ventas;
                         let fSplit = f.split(" ");
                         const ticket = c.id;
                         const fecha_v  = f;
