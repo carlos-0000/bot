@@ -1,9 +1,9 @@
 var fonts = {
   Roboto: {
-    normal: 'modulos/modulosGenerales/fonts/Roboto-Regular.ttf',
-    bold: 'modulos/modulosGenerales/fonts/Roboto-Medium.ttf',
-    italics: 'modulos/modulosGenerales/fonts/Roboto-Italic.ttf',
-    bolditalics: 'modulos/modulosGenerales/fonts/Roboto-MediumItalic.ttf'
+    normal: '/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/modulos/modulosGenerales/fonts/Roboto-Regular.ttf',
+    bold: '/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/modulos/modulosGenerales/fonts/Roboto-Medium.ttf',
+    italics: '/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/modulos/modulosGenerales/fonts/Roboto-Italic.ttf',
+    bolditalics: '/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/modulos/modulosGenerales/fonts/Roboto-MediumItalic.ttf'
   }
 };
 
