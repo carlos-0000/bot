@@ -11,7 +11,7 @@ var fonts = {
 
 /* MODULOS REQUERIDOS */
 // const db = require('../../db/db');
-const db = require('./db/db');
+const db = require('../db/db');
 
 var PdfPrinter = require('pdfmake');
 var printer = new PdfPrinter(fonts);
