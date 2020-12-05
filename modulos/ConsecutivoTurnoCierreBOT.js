@@ -3,7 +3,7 @@ const format = require('date-format');
 
 /* MODULOS REQUERIDOS */
 // const db = require('../../db/db');
-const db = require('./db/db');
+const db = require('../db/db');
 //const CambioPrecio = require('../modulosGenerales/CambioPrecio');
 const CierreTurnoPDF = require('/home/pi/TicketSoftConsoleGpio/botticketsoft/modulos/CierreTurnoPDF');
 //const CierreTurnoExcel = require('../modulosGenerales/CierreTurnoExcel');
