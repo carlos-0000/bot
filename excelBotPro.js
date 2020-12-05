@@ -183,7 +183,7 @@ module.exports = async function excel (fecha1, fecha2) {
                     //console.log('archivo creado');
                     // cierre_1601412934885.xlsl
                     
-                     wb.write(`/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/archivos/excel/${tempName}`, err => err ? reject(false):resolve(tempName));
+                     wb.write(`/home/pi/TicketSoftConsoleGpio/botticketsoft/archivos/excel/${tempName}`, err => err ? reject(false):resolve(tempName));
                     console.log('archivo creado');
 
                 } else {
