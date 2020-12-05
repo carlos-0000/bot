@@ -453,7 +453,7 @@ module.exports = class CierreTurnoPDF{
 
             
     var pdfDoc = printer.createPdfKitDocument(docDefinition);
-    pdfDoc.pipe(fs.createWriteStream('/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/archivos/pdfs/CIERRE_DISPENSADOR_' +data.surtidor + '_TURNO_' +data.corteVenta + '.pdf'));
+    pdfDoc.pipe(fs.createWriteStream('/home/pi/TicketSoftConsoleGpio/botticketsoft/archivos/pdfs/CIERRE_DISPENSADOR_' +data.surtidor + '_TURNO_' +data.corteVenta + '.pdf'));
     //var path = '/static/pdf/CIERRE' + data.corteVenta + '.pdf';
     pdfDoc.end();
     //save();
