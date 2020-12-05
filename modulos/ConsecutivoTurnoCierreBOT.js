@@ -5,7 +5,7 @@ const format = require('date-format');
 // const db = require('../../db/db');
 const db = require('./db/db');
 //const CambioPrecio = require('../modulosGenerales/CambioPrecio');
-const CierreTurnoPDF = require('/home/pi/TicketSoftConsoleGpio/puerto-serial-gpio/botticketsoft/modulos/CierreTurnoPDF');
+const CierreTurnoPDF = require('/home/pi/TicketSoftConsoleGpio/botticketsoft/modulos/CierreTurnoPDF');
 //const CierreTurnoExcel = require('../modulosGenerales/CierreTurnoExcel');
 
 module.exports = class ConsecutivoTurnoCierre {
