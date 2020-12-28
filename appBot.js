@@ -7,7 +7,7 @@ const format = require('date-format');
 
 
 
-const bot =  new Telegraf('1482118762:AAG8Wmi1yxrN8f0SdjC5xufWu-Qp7bJMNmI');
+const bot =  new Telegraf('');
 
 let fecha1 = "";
 let fecha2 = "";
