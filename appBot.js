@@ -3,11 +3,12 @@ const excel = require("./excelBotPro");
 const db = require('./db/db');
 const ConsecutivoTurnoCierre = require('/home/pi/TicketSoftConsoleGpio/botticketsoft/modulos/ConsecutivoTurnoCierreBOT');
 const format = require('date-format');
+const shell = require('shelljs');
 
 
 
 
-const bot =  new Telegraf('');
+const bot =  new Telegraf('1602867861:AAGlrmRm6uToGpRWqnNIOEDYg2zps4ivJ4Y');
 
 let fecha1 = "";
 let fecha2 = "";
@@ -15,7 +16,6 @@ let fechasLimites = {};
 let dispensador = 0;
 let array = new Array();
 
-const exec = require('child_process').exec;
 
         //
 
@@ -55,6 +55,7 @@ module.exports = class TelegrafON {
             ### Bienvenido al bot de TicketSoft 🌐 ###
   
           `);
+          this.reinciarDispensador();
           this.fechaLimites();
           this.turno();
           this.fechaInicial();
@@ -68,6 +69,25 @@ module.exports = class TelegrafON {
       console.log("ERROR inicar_bot :" + error);
     }
   }
+
+
+
+  reinciarDispensador(){
+
+    bot.command("reiniciar", (ctx) => {
+
+            ctx.reply(`
+            ✅ DISPENSADOR REINICIADO
+            espere mínimo 30 segundos
+              `); 
+
+    shell.exec('sudo reboot')
+       //  shell.exec('sudo ls')
+
+    })
+
+  }
+
 
   fechaLimites() {
     try {
